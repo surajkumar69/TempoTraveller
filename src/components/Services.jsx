@@ -31,14 +31,14 @@ export default function Services({ onOpenBooking }) {
               className="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden hover:border-orange-500/40 transition-all duration-300 shadow-xl flex flex-col group"
             >
               {/* Service Image Header */}
-              <div className="relative aspect-[16/10] overflow-hidden">
+              <div className="relative aspect-[16/10] min-h-[220px] overflow-hidden bg-slate-950 flex items-center justify-center p-2">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-90" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-90 pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4">
                   <span className="text-[11px] font-bold text-orange-400 uppercase tracking-widest bg-slate-900/80 px-2.5 py-1 rounded-md border border-white/10 backdrop-blur-md">
                     {service.subtitle}

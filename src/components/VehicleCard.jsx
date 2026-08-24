@@ -12,14 +12,14 @@ export default function VehicleCard({ vehicle, onBookNow }) {
     <div className="bg-slate-900 border border-slate-800 hover:border-orange-500/50 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 flex flex-col group">
       
       {/* Image Header with Badge & Price Tag */}
-      <div className="relative aspect-[16/10] overflow-hidden bg-slate-950">
+      <div className="relative aspect-[16/10] min-h-[220px] overflow-hidden bg-slate-950 flex items-center justify-center p-2">
         <img
           src={vehicle.image}
           alt={vehicle.name}
-          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/10 to-transparent opacity-80 pointer-events-none" />
 
         {/* Top Left Badge */}
         {vehicle.badge && (
