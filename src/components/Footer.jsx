@@ -120,6 +120,26 @@ export default function Footer() {
 
         </div>
 
+        {/* Local SEO Target Keywords Bar */}
+        <div className="py-8 border-b border-slate-900 space-y-3">
+          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center sm:text-left">
+            Popular Local Search Destinations &amp; Vehicle Rentals:
+          </h4>
+          <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
+            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller for Shillong</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller for Guwahati</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Urbania for Shillong</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Urbania for Guwahati</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller and Urbania Rental for Shillong</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller and Urbania Rental for Guwahati</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Force Urbania Shillong</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Guwahati LGBI Airport Pickups</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Cherrapunji &amp; Dawki Tours</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Kaziranga Assam Safari</span>
+            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Tawang Arunachal Expedition</span>
+          </div>
+        </div>
+
         {/* Bottom Copyright Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div>

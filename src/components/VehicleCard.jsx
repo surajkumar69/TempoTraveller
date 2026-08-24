@@ -15,7 +15,7 @@ export default function VehicleCard({ vehicle, onBookNow }) {
       <div className="relative aspect-[16/10] min-h-[220px] overflow-hidden bg-slate-950 flex items-center justify-center p-2">
         <img
           src={vehicle.image}
-          alt={vehicle.name}
+          alt={`${vehicle.name} - Tempo Traveller and Urbania Rental for Shillong & Guwahati`}
           className="w-full h-full object-contain object-center group-hover:scale-105 transition-transform duration-500"
           loading="lazy"
         />

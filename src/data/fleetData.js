@@ -73,7 +73,7 @@ export const VEHICLES = [
     priceLabel: '₹11,000 onwards',
     image: urbaniaImg,
     badge: 'Executive VIP Luxury',
-    description: 'Next-generation executive travel van featuring monocoque body structure, individual air vents, and supreme suspension comfort across Meghalaya, Assam & Arunachal Pradesh.',
+    description: 'Premier executive Urbania for Shillong and Urbania for Guwahati. Monocoque body safety, individual AC vents, and supreme suspension comfort across Meghalaya, Assam & Arunachal Pradesh.',
     features: ['13 Plush Reclining Seats', 'Individual AC Vents', 'Super Quiet Cabin', 'Monocoque Safety Body', 'Individual USB Chargers', 'Panoramic Wide Windows'],
     specifications: {
       fuel: 'Diesel',
@@ -92,7 +92,7 @@ export const VEHICLES = [
     priceLabel: '₹11,000 onwards',
     image: urbaniaImg,
     badge: 'Ultra Premium Group Travel',
-    description: '16-seater Force Urbania offering unparalleled luxury, wide aisle room, soft leatherette seating, and panoramic scenic viewing across Meghalaya, Assam & Arunachal Pradesh.',
+    description: 'Luxury 16-seater Urbania for Shillong & Guwahati group tours, corporate delegations, and outstation trips across Meghalaya, Assam & Arunachal Pradesh.',
     features: ['16 Premium Seats', 'Ultra-Smooth Suspension', 'Ambient Cabin Lighting', 'Reclining Armrest Seats', 'Spacious Overhead Storage', 'Local Expert Driver'],
     specifications: {
       fuel: 'Diesel',
@@ -184,7 +184,7 @@ export const SERVICES = [
     id: 'service-tempo',
     title: 'Tempo Traveller Rental',
     subtitle: '13, 17 & 25 Seater Options',
-    description: 'Comfortable group transportation for family trips, tour delegations, and special events across Shillong, Cherrapunji, Dawki, Kaziranga, and all over Meghalaya, Assam & Arunachal Pradesh.',
+    description: 'Looking for a Tempo Traveller for Shillong or Tempo Traveller for Guwahati? We offer top-rated Tempo Traveller and Urbania Rental for Shillong & Guwahati for family trips, tour groups, Cherrapunji, Dawki, Kaziranga & outstation travel.',
     image: tempoImg,
     startingPrice: '₹7,500 / day onwards',
     highlights: [
@@ -196,9 +196,9 @@ export const SERVICES = [
   },
   {
     id: 'service-urbania',
-    title: 'Urbania Rental',
+    title: 'Force Urbania Rental',
     subtitle: '13 & 16 Seater Luxury Vans',
-    description: 'Premium and spacious executive travel for VIP groups, corporate delegations, weddings, and high-end Meghalaya, Assam & Arunachal Pradesh tour packages.',
+    description: 'Executive Urbania for Shillong and Urbania for Guwahati rentals. Next-generation VIP group travel for corporate delegations, weddings, and premium Meghalaya, Assam & Arunachal Pradesh tour packages.',
     image: urbaniaImg,
     startingPrice: '₹11,000 / day onwards',
     highlights: [

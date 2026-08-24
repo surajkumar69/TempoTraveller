@@ -15,11 +15,11 @@ export default function Services({ onOpenBooking }) {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-white tracking-tight">
-            Tailored Rental Services for Every Journey
+            Tempo Traveller &amp; Urbania Rental for <span className="text-gradient">Shillong &amp; Guwahati</span>
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Whether planning a family holiday in Cherrapunji, executive VIP travel in an Urbania, or Guwahati airport transfers, we have the ideal vehicle ready.
+            Premium group travel solutions featuring <strong>Tempo Traveller for Shillong</strong>, <strong>Urbania for Guwahati</strong>, airport transfers, Cherrapunji excursions, Kaziranga safaris &amp; outstation travel across Meghalaya, Assam &amp; Arunachal Pradesh.
           </p>
         </div>
 

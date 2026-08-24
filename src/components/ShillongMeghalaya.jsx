@@ -16,11 +16,11 @@ export default function ShillongMeghalaya({ onOpenBooking }) {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-white tracking-tight">
-            Explore Meghalaya, Assam &amp; Arunachal Pradesh in <span className="text-gradient">Ultimate Comfort</span>
+            Meghalaya, Assam &amp; Arunachal Pradesh Tours from <span className="text-gradient">Shillong &amp; Guwahati</span>
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Winding mountain roads, misty valleys, tea garden trails, and crystal rivers across Meghalaya, Assam &amp; Arunachal Pradesh require reliable vehicles and experienced local drivers. We ensure your journey is smooth and memorable.
+            Rent a <strong>Tempo Traveller for Shillong</strong>, <strong>Urbania for Shillong</strong>, or <strong>Tempo Traveller for Guwahati</strong> for seamless travel to Cherrapunji, Dawki, Kaziranga National Park &amp; Tawang Monastery with experienced local mountain drivers.
           </p>
         </div>
 

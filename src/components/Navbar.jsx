@@ -21,10 +21,11 @@ export default function Navbar({ onOpenBooking }) {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
+    { name: 'Locations', href: '#locations' },
     { name: 'Services', href: '#services' },
     { name: 'Vehicles', href: '#vehicles' },
     { name: 'Meghalaya Tours', href: '#meghalaya' },
+    { name: 'About Us', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];
 

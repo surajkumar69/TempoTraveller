@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import VehicleFleet from './components/VehicleFleet';
 import Services from './components/Services';
+import LocationsSection from './components/LocationsSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import ShillongMeghalaya from './components/ShillongMeghalaya';
 import AboutUs from './components/AboutUs';
@@ -35,6 +36,7 @@ export default function App() {
       {/* Main Sections */}
       <main>
         <Hero onOpenBooking={handleOpenBooking} />
+        <LocationsSection onOpenBooking={handleOpenBooking} />
         <VehicleFleet onBookNow={handleOpenBooking} />
         <Services onOpenBooking={handleOpenBooking} />
         <WhyChooseUs />
