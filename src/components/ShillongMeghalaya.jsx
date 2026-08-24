@@ -12,15 +12,15 @@ export default function ShillongMeghalaya({ onOpenBooking }) {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-wider">
             <Compass className="w-4 h-4" />
-            <span>Explore Meghalaya</span>
+            <span>Explore Meghalaya, Assam &amp; Arunachal Pradesh</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-white tracking-tight">
-            Explore Shillong &amp; Beyond in <span className="text-gradient">Ultimate Comfort</span>
+            Explore Meghalaya, Assam &amp; Arunachal Pradesh in <span className="text-gradient">Ultimate Comfort</span>
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Meghalaya's winding mountain roads, misty valleys, and crystal rivers require reliable vehicles and experienced local drivers. We ensure your journey is smooth and memorable.
+            Winding mountain roads, misty valleys, tea garden trails, and crystal rivers across Meghalaya, Assam &amp; Arunachal Pradesh require reliable vehicles and experienced local drivers. We ensure your journey is smooth and memorable.
           </p>
         </div>
 
@@ -28,13 +28,13 @@ export default function ShillongMeghalaya({ onOpenBooking }) {
         <div className="relative rounded-3xl overflow-hidden mb-12 border border-slate-800 shadow-2xl">
           <img
             src={heroBg}
-            alt="Meghalaya Scenic Road Tour"
+            alt="Meghalaya Assam Arunachal Scenic Road Tour"
             className="w-full h-80 sm:h-96 object-cover object-center filter brightness-90"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent p-6 sm:p-12 flex flex-col justify-end">
             <div className="max-w-xl space-y-3">
               <span className="text-xs font-bold text-orange-400 uppercase tracking-wider">
-                Customized Meghalaya Itineraries Available
+                Customized Meghalaya, Assam &amp; Arunachal Pradesh Itineraries Available
               </span>
               <h3 className="text-2xl sm:text-3xl font-extrabold font-['Outfit'] text-white">
                 Family Sightseeing, Group Tours &amp; Outstation Cab Services

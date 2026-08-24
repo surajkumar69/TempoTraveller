@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            We take pride in offering clean, comfortable, and reliable vehicle rentals with experienced drivers who know Meghalaya’s mountain terrain inside out.
+            We take pride in offering clean, comfortable, and reliable vehicle rentals with experienced drivers who know the mountain terrain of Meghalaya, Assam &amp; Arunachal Pradesh inside out.
           </p>
         </div>
 

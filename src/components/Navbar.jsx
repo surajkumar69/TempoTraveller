@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, Menu, X, Car, Calendar, MapPin, ChevronRight } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, Calendar, MapPin, ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/fleetData';
+import logoImg from '../assets/images/logo.png';
 
 export default function Navbar({ onOpenBooking }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,16 +30,18 @@ export default function Navbar({ onOpenBooking }) {
 
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'glass-nav py-3 border-b border-slate-800/80 shadow-2xl' : 'bg-slate-950/70 backdrop-blur-md py-5 border-b border-white/10'
+      isScrolled ? 'glass-nav py-2.5 border-b border-slate-800/80 shadow-2xl' : 'bg-slate-950/70 backdrop-blur-md py-4 border-b border-white/10'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           
-          {/* Brand Logo */}
+          {/* Official Brand Logo */}
           <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white shadow-lg shadow-orange-500/25 group-hover:scale-105 transition-transform">
-              <Car className="w-6 h-6 stroke-[2.5]" />
-            </div>
+            <img
+              src={logoImg}
+              alt="Tempo Traveller & Urbania Co. Official Logo"
+              className="w-11 h-11 sm:w-12 sm:h-12 object-contain rounded-full border-2 border-orange-500/60 shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform"
+            />
             <div>
               <span className="block text-lg sm:text-xl font-bold font-['Outfit'] text-white tracking-tight leading-none">
                 Tempo Traveller <span className="text-orange-500">&amp; Urbania</span> Co.

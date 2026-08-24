@@ -16,7 +16,7 @@ export const VEHICLES = [
     priceLabel: '₹7,500 onwards',
     image: tempoImg,
     badge: 'Popular for Family Groups',
-    description: 'Spacious and comfortable 13-seater Tempo Traveller for family trips, tour groups and hill excursions around Shillong & Meghalaya.',
+    description: 'Spacious and comfortable 13-seater Tempo Traveller for family trips, tour groups and hill excursions around Meghalaya, Assam & Arunachal Pradesh.',
     features: ['13 Reclining Seats', 'Powerful AC / Blower', 'Ample Boot Space', 'High Roof Standing Comfort', 'Bluetooth Music System', 'Hill-Trained Driver'],
     specifications: {
       fuel: 'Diesel',
@@ -35,7 +35,7 @@ export const VEHICLES = [
     priceLabel: '₹7,500 onwards',
     image: tempoImg,
     badge: 'Ideal for Tour Groups',
-    description: 'Spacious 17-seater Tempo Traveller designed for smooth group travel across Cherrapunji, Dawki, and outstation Meghalaya tours.',
+    description: 'Spacious 17-seater Tempo Traveller designed for smooth group travel across Cherrapunji, Dawki, Kaziranga, and outstation Meghalaya, Assam & Arunachal Pradesh tours.',
     features: ['17 Luxury Seats', 'Push-back Ergonomic Seating', 'Individual Charging Points', 'Spacious Aisle', 'Substantial Luggage Carrier', 'First Aid & Safety Kit'],
     specifications: {
       fuel: 'Diesel',
@@ -50,11 +50,11 @@ export const VEHICLES = [
     category: 'tempo-traveller',
     type: 'Tempo Traveller',
     seats: 25,
-    price: 7500,
-    priceLabel: '₹7,500 onwards',
+    price: 10000,
+    priceLabel: '₹10,000 onwards',
     image: tempoImg,
     badge: 'Large Event Special',
-    description: 'Maximum capacity 25-seater Tempo Traveller ideal for large corporate groups, wedding parties, and extended tour delegations.',
+    description: 'Maximum capacity 25-seater Tempo Traveller ideal for large corporate groups, wedding parties, and extended tour delegations across Meghalaya, Assam & Arunachal Pradesh.',
     features: ['25 Comfortable Seats', 'Spacious Interiors', 'High Roof Clearance', 'Heavy Duty Suspension', 'Entertainment System', 'Experienced Mountain Driver'],
     specifications: {
       fuel: 'Diesel',
@@ -73,7 +73,7 @@ export const VEHICLES = [
     priceLabel: '₹11,000 onwards',
     image: urbaniaImg,
     badge: 'Executive VIP Luxury',
-    description: 'Next-generation executive travel van featuring monocoque body structure, individual air vents, and supreme suspension comfort.',
+    description: 'Next-generation executive travel van featuring monocoque body structure, individual air vents, and supreme suspension comfort across Meghalaya, Assam & Arunachal Pradesh.',
     features: ['13 Plush Reclining Seats', 'Individual AC Vents', 'Super Quiet Cabin', 'Monocoque Safety Body', 'Individual USB Chargers', 'Panoramic Wide Windows'],
     specifications: {
       fuel: 'Diesel',
@@ -92,7 +92,7 @@ export const VEHICLES = [
     priceLabel: '₹11,000 onwards',
     image: urbaniaImg,
     badge: 'Ultra Premium Group Travel',
-    description: '16-seater Force Urbania offering unparalleled luxury, wide aisle room, soft leatherette seating, and panoramic scenic viewing.',
+    description: '16-seater Force Urbania offering unparalleled luxury, wide aisle room, soft leatherette seating, and panoramic scenic viewing across Meghalaya, Assam & Arunachal Pradesh.',
     features: ['16 Premium Seats', 'Ultra-Smooth Suspension', 'Ambient Cabin Lighting', 'Reclining Armrest Seats', 'Spacious Overhead Storage', 'Local Expert Driver'],
     specifications: {
       fuel: 'Diesel',
@@ -111,7 +111,7 @@ export const VEHICLES = [
     priceLabel: '₹5,500 onwards',
     image: innovaImg,
     badge: 'Best-in-Class SUV Comfort',
-    description: 'The gold standard for hill road trips in Meghalaya. Superior ride quality, plush captain seats, and exceptional safety.',
+    description: 'The gold standard for hill road trips across Meghalaya, Assam & Arunachal Pradesh. Superior ride quality, plush captain seats, and exceptional safety.',
     features: ['7 Seater Capacity', 'Captain Seats Option', 'Automatic Rear AC', 'Top Safety Rating', 'Smooth Hill Climbing', 'Clean & Sanitized Cabin'],
     specifications: {
       fuel: 'Diesel',
@@ -130,7 +130,7 @@ export const VEHICLES = [
     priceLabel: '₹4,500 onwards',
     image: ertigaImg,
     badge: 'Family Favorite MUV',
-    description: 'Economical yet highly spacious 7-seater MUV, ideal for small families exploring Shillong local points and airport transfers.',
+    description: 'Economical yet highly spacious 7-seater MUV, ideal for small families exploring Shillong local points, Guwahati, Kaziranga & outstation routes.',
     features: ['7 Seater Capacity', 'Foldable Rear Seats', 'Roof Mounted AC Vents', 'Fuel Efficient & Smooth', 'Clean Interiors', 'Punctual Pickup Service'],
     specifications: {
       fuel: 'Petrol/CNG',
@@ -149,7 +149,7 @@ export const VEHICLES = [
     priceLabel: '₹4,000 onwards',
     image: brezzaImg,
     badge: 'Compact Hill SUV',
-    description: 'Sturdy 5-seater compact SUV built for rugged hill curves, steep inclines, and swift sightseeing trips around Meghalaya.',
+    description: 'Sturdy 5-seater compact SUV built for rugged hill curves, steep inclines, and swift sightseeing trips around Meghalaya, Assam & Arunachal Pradesh.',
     features: ['5 Seater Capacity', 'High Ground Clearance', 'Chilling Air Conditioning', 'Comfortable Suspension', 'Sound System', 'Friendly Driver'],
     specifications: {
       fuel: 'Petrol',
@@ -168,7 +168,7 @@ export const VEHICLES = [
     priceLabel: '₹3,500 onwards',
     image: dzireImg,
     badge: 'Best Budget Sedan',
-    description: 'Sleek and comfortable 5-seater sedan, perfect for couples, business travelers, and airport drop/pickup between Shillong & Guwahati.',
+    description: 'Sleek and comfortable 5-seater sedan, perfect for couples, business travelers, and airport drop/pickup between Shillong, Guwahati & outstation destinations.',
     features: ['5 Seater Capacity', 'Spacious Trunk Boot', 'Quiet Interior', 'Automatic AC', 'Clean Seat Covers', 'On-Time Guaranteed'],
     specifications: {
       fuel: 'Petrol',
@@ -184,7 +184,7 @@ export const SERVICES = [
     id: 'service-tempo',
     title: 'Tempo Traveller Rental',
     subtitle: '13, 17 & 25 Seater Options',
-    description: 'Comfortable group transportation for family trips, tour delegations, and special events across Shillong, Cherrapunji, Dawki, and all over Meghalaya.',
+    description: 'Comfortable group transportation for family trips, tour delegations, and special events across Shillong, Cherrapunji, Dawki, Kaziranga, and all over Meghalaya, Assam & Arunachal Pradesh.',
     image: tempoImg,
     startingPrice: '₹7,500 / day onwards',
     highlights: [
@@ -198,7 +198,7 @@ export const SERVICES = [
     id: 'service-urbania',
     title: 'Urbania Rental',
     subtitle: '13 & 16 Seater Luxury Vans',
-    description: 'Premium and spacious executive travel for VIP groups, corporate delegations, weddings, and high-end Meghalaya tour packages.',
+    description: 'Premium and spacious executive travel for VIP groups, corporate delegations, weddings, and high-end Meghalaya, Assam & Arunachal Pradesh tour packages.',
     image: urbaniaImg,
     startingPrice: '₹11,000 / day onwards',
     highlights: [
@@ -212,8 +212,8 @@ export const SERVICES = [
     id: 'service-cab',
     title: 'Cab Rental Services',
     subtitle: 'Innova Crysta, Ertiga, Brezza & Dzire',
-    description: 'Reliable local sightseeing and outstation cab services with courteous, experienced local drivers for seamless mountain travel.',
-    image: innovaImg,
+    description: 'Reliable local sightseeing and outstation cab services across Meghalaya, Assam & Arunachal Pradesh with courteous, experienced local drivers.',
+    image: dzireImg,
     startingPrice: '₹3,500 / day onwards',
     highlights: [
       'Local Shillong & Guwahati Airport Drop',
@@ -231,7 +231,7 @@ export const WHY_CHOOSE_US = [
   },
   {
     title: 'Professional Drivers',
-    description: 'Courteous, punctual, and expert drivers with deep knowledge of Meghalaya mountain routes and tourist safety.'
+    description: 'Courteous, punctual, and expert drivers with deep knowledge of Meghalaya, Assam & Arunachal Pradesh mountain routes and tourist safety.'
   },
   {
     title: 'Comfortable Travel',
@@ -239,7 +239,7 @@ export const WHY_CHOOSE_US = [
   },
   {
     title: 'On-Time Pickup & Drop',
-    description: 'Strict punctuality guaranteed for Shillong local points, Guwahati Airport, and outstation drops.'
+    description: 'Strict punctuality guaranteed for Shillong local points, Guwahati Airport, Kaziranga & outstation drops.'
   },
   {
     title: 'Affordable Pricing',
@@ -247,7 +247,7 @@ export const WHY_CHOOSE_US = [
   },
   {
     title: '24/7 Customer Support',
-    description: 'Dedicated trip assistance before, during, and after your Meghalaya journey.'
+    description: 'Dedicated trip assistance before, during, and after your journey across Meghalaya, Assam & Arunachal Pradesh.'
   }
 ];
 
@@ -267,18 +267,18 @@ export const MEGHALAYA_DESTINATIONS = [
     recommendedVehicle: 'Force Urbania / Innova Crysta'
   },
   {
-    name: 'Mawlynnong Village',
-    tagline: 'Cleanest Village in Asia',
-    distance: '78 km from Shillong',
-    description: 'Stroll through immaculate flower-lined gardens, bamboo skywalks, and historic village trails.',
-    recommendedVehicle: 'Tempo Traveller / Ertiga'
+    name: 'Kaziranga & Assam Circuit',
+    tagline: 'Wildlife & Tea Garden Trails',
+    distance: '240 km from Shillong',
+    description: 'Experience rhino safaris in Kaziranga National Park and lush tea gardens across Assam.',
+    recommendedVehicle: 'Innova Crysta / Force Urbania'
   },
   {
-    name: 'Guwahati Airport Transfer',
-    tagline: 'LGBI Airport & Railway Station',
-    distance: '100 km from Shillong',
-    description: 'Punctual, stress-free transfers between Guwahati Airport/Railway station and Police Bazar, Shillong.',
-    recommendedVehicle: 'Swift Dzire / Innova Crysta / Urbania'
+    name: 'Tawang & Arunachal Circuit',
+    tagline: 'Monasteries & Snowy Passes',
+    distance: 'Outstation Expedition',
+    description: 'Journey to Sela Pass, Tawang Monastery, and scenic alpine valleys in Arunachal Pradesh.',
+    recommendedVehicle: 'Tempo Traveller / Innova Crysta'
   }
 ];
 
@@ -286,9 +286,9 @@ export const BUSINESS_INFO = {
   name: 'Tempo Traveller and Urbania Co.',
   tagline: 'Your Journey, Our Priority',
   email: 'tempotravellerandurbania@gmail.com',
-  phone: '+91 98765 43210',
-  phoneFormatted: '+91 98765 43210',
-  whatsappNumber: '919876543210',
+  phone: '+91 6909326969',
+  phoneFormatted: '+91 69093 26969',
+  whatsappNumber: '916909326969',
   address: 'Police Bazar, Jail Road, Opp. Hotel COURTYARD by Marriott, Shillong, Meghalaya – 793001',
   googleMapsEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.675685824985!2d91.88371517596078!3d25.577457777467794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37507ea293c0429f%3A0xb5bfaaa1f52d9a3a!2sHotel%20Courtyard%20by%20Marriott%20Shillong!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin'
 };

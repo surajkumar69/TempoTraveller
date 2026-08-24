@@ -1,6 +1,7 @@
 import React from 'react';
 import { BUSINESS_INFO, VEHICLES } from '../data/fleetData';
-import { Car, Mail, MapPin, Phone, MessageCircle, Heart, ChevronRight, Globe, Share2 } from 'lucide-react';
+import { Mail, MapPin, Phone, MessageCircle, Heart, ChevronRight, Globe, Share2 } from 'lucide-react';
+import logoImg from '../assets/images/logo.png';
 
 export default function Footer() {
   return (
@@ -12,17 +13,19 @@ export default function Footer() {
           
           {/* Col 1: Brand & Tagline (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <a href="#home" className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white shadow-lg shadow-orange-500/20">
-                <Car className="w-6 h-6 stroke-[2.5]" />
-              </div>
+            <a href="#home" className="flex items-center gap-3 group">
+              <img
+                src={logoImg}
+                alt="Tempo Traveller & Urbania Co. Official Logo"
+                className="w-12 h-12 object-contain rounded-full border-2 border-orange-500/60 shadow-lg shadow-orange-500/20 group-hover:scale-105 transition-transform"
+              />
               <span className="text-xl font-extrabold font-['Outfit'] text-white">
                 Tempo Traveller <span className="text-orange-500">&amp; Urbania</span> Co.
               </span>
             </a>
 
             <p className="text-xs text-slate-400 leading-relaxed">
-              Shillong's trusted name for Tempo Traveller, Force Urbania, and outstation cab rentals. Providing safe, comfortable, and reliable passenger transport across Meghalaya.
+              Shillong's trusted name for Tempo Traveller, Force Urbania, and outstation cab rentals. Providing safe, comfortable, and reliable passenger transport across Meghalaya, Assam &amp; Arunachal Pradesh.
             </p>
 
             <div className="p-3 rounded-xl bg-slate-900/80 border border-slate-800">

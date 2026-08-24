@@ -16,7 +16,7 @@ export default function BookingCTA({ onOpenBooking }) {
         </h2>
 
         <p className="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal leading-relaxed">
-          Book your preferred vehicle today for a comfortable and hassle-free travel experience across Shillong, Cherrapunji, Dawki, and all of Meghalaya.
+          Book your preferred vehicle today for a comfortable and hassle-free travel experience across Meghalaya, Assam &amp; Arunachal Pradesh.
         </p>
 
         {/* Action Buttons */}

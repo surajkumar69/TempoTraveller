@@ -33,11 +33,11 @@ export default function VehicleFleet({ onBookNow }) {
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-white tracking-tight">
-            Choose Your Ideal Vehicle for <span className="text-gradient">Shillong &amp; Meghalaya</span>
+            Choose Your Ideal Vehicle for <span className="text-gradient">Meghalaya, Assam &amp; Arunachal Pradesh</span>
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            From 13-25 Seater Tempo Travellers &amp; Executive Force Urbania to luxury Innova Crysta, Ertiga, Brezza &amp; Swift Dzire cabs. Verified clean, comfortable, and hill-ready.
+            From 13-25 Seater Tempo Travellers &amp; Executive Force Urbania to luxury Innova Crysta, Ertiga, Brezza &amp; Swift Dzire cabs. Verified clean, comfortable, and ready for North-East mountain roads.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import { BUSINESS_INFO } from '../data/fleetData';
 
 export default function VehicleCard({ vehicle, onBookNow }) {
   const handleWhatsAppEnquiry = () => {
-    const text = `Hello Tempo Traveller and Urbania Co.,\n\nI want to inquire about renting: *${vehicle.name}*\nPrice: ${vehicle.priceLabel}\nSeating: ${vehicle.seats} Seater\n\nPlease let me know availability and daily package details for Shillong / Meghalaya travel.`;
+    const text = `Hello Tempo Traveller and Urbania Co.,\n\nI want to inquire about renting: *${vehicle.name}*\nPrice: ${vehicle.priceLabel}\nSeating: ${vehicle.seats} Seater\n\nPlease let me know availability and daily package details for travel across Meghalaya, Assam & Arunachal Pradesh.`;
     window.open(`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
   };
 

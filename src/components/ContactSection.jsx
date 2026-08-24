@@ -46,7 +46,7 @@ export default function ContactSection({ selectedVehicleId }) {
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Have a question or need a custom Meghalaya tour quote? Call us, drop by our Police Bazar hub, or fill out the enquiry form below.
+            Have a question or need a custom Meghalaya, Assam &amp; Arunachal Pradesh tour quote? Call us, drop by our Police Bazar hub, or fill out the enquiry form below.
           </p>
         </div>
 
@@ -194,7 +194,7 @@ export default function ContactSection({ selectedVehicleId }) {
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+91 98765 43210"
+                        placeholder="+91 69093 26969"
                         className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
                       />
                     </div>

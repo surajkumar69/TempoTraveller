@@ -122,7 +122,7 @@ export default function BookingFormModal({ isOpen, onClose, selectedVehicleId })
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  placeholder="+91 98765 43210"
+                  placeholder="+91 69093 26969"
                   className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:border-orange-500 outline-none"
                 />
               </div>

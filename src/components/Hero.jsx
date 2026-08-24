@@ -38,7 +38,7 @@ export default function Hero({ onOpenBooking }) {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs sm:text-sm font-semibold backdrop-blur-md">
               <Sparkles className="w-4 h-4" />
-              <span>Premium Meghalaya Travel Experience</span>
+              <span>Premium Meghalaya, Assam &amp; Arunachal Pradesh Travel</span>
             </div>
 
             {/* Headline */}
@@ -49,7 +49,7 @@ export default function Hero({ onOpenBooking }) {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl font-normal leading-relaxed">
-              Reliable Tempo Traveller, Urbania &amp; Cab Rental Services for every journey and every occasion across Shillong, Cherrapunji, Dawki, and all of Meghalaya.
+              Reliable Tempo Traveller, Urbania &amp; Cab Rental Services for every journey and every occasion across Meghalaya, Assam &amp; Arunachal Pradesh.
             </p>
 
             {/* Key Badges */}
