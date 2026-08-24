@@ -121,22 +121,43 @@ export default function Footer() {
         </div>
 
         {/* Local SEO Target Keywords Bar */}
-        <div className="py-8 border-b border-slate-900 space-y-3">
-          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-widest text-center sm:text-left">
-            Popular Local Search Destinations &amp; Vehicle Rentals:
-          </h4>
-          <div className="flex flex-wrap items-center gap-2 text-[11px] text-slate-400">
-            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller for Shillong</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller for Guwahati</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Urbania for Shillong</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Urbania for Guwahati</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller and Urbania Rental for Shillong</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900 border border-slate-800 text-slate-300">Tempo Traveller and Urbania Rental for Guwahati</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Force Urbania Shillong</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Guwahati LGBI Airport Pickups</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Cherrapunji &amp; Dawki Tours</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Kaziranga Assam Safari</span>
-            <span className="px-2.5 py-1 rounded-md bg-slate-900/60 border border-slate-800 text-slate-400">Tawang Arunachal Expedition</span>
+        <div className="py-8 border-b border-slate-900 space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <h4 className="text-xs font-bold text-orange-400 uppercase tracking-widest">
+              Popular Local Keyword Searches &amp; Rentals
+            </h4>
+            <span className="text-[11px] text-slate-400">Quick Book &amp; Outstation Service</span>
+          </div>
+          <div className="flex flex-wrap items-center gap-2.5 text-xs text-slate-300">
+            <a href="#vehicles" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-orange-500/30 text-slate-200 hover:text-orange-400 hover:border-orange-500 hover:bg-slate-850 transition-all font-medium flex items-center gap-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+              Tempo traveller for shillong
+            </a>
+            <a href="#vehicles" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-orange-500/30 text-slate-200 hover:text-orange-400 hover:border-orange-500 hover:bg-slate-850 transition-all font-medium flex items-center gap-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+              Tempo traveller for Guwahati
+            </a>
+            <a href="#vehicles" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-orange-500/30 text-slate-200 hover:text-orange-400 hover:border-orange-500 hover:bg-slate-850 transition-all font-medium flex items-center gap-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+              Urbania for shillong
+            </a>
+            <a href="#vehicles" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-orange-500/30 text-slate-200 hover:text-orange-400 hover:border-orange-500 hover:bg-slate-850 transition-all font-medium flex items-center gap-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+              Urbania for Guwahati
+            </a>
+            <a href="#vehicles" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-orange-500/30 text-slate-200 hover:text-orange-400 hover:border-orange-500 hover:bg-slate-850 transition-all font-medium flex items-center gap-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+              Tempo traveller and Urbania rental for shillong
+            </a>
+            <a href="#vehicles" className="px-3 py-1.5 rounded-lg bg-slate-900 border border-orange-500/30 text-slate-200 hover:text-orange-400 hover:border-orange-500 hover:bg-slate-850 transition-all font-medium flex items-center gap-1.5 shadow-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-orange-500"></span>
+              Tempo traveller and Urbania rental for Guwahati
+            </a>
+            <span className="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400 font-medium">Force Urbania Shillong</span>
+            <span className="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400 font-medium">Guwahati LGBI Airport Pickups</span>
+            <span className="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400 font-medium">Cherrapunji &amp; Dawki Tours</span>
+            <span className="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400 font-medium">Kaziranga Assam Safari</span>
+            <span className="px-3 py-1.5 rounded-lg bg-slate-900/60 border border-slate-800 text-slate-400 font-medium">Tawang Arunachal Expedition</span>
           </div>
         </div>
 
