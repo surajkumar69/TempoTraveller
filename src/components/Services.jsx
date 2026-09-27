@@ -2,7 +2,7 @@ import React from 'react';
 import { SERVICES, BUSINESS_INFO } from '../data/fleetData';
 import { ShieldCheck, CheckCircle2, ArrowRight, Wrench, MessageCircle } from 'lucide-react';
 
-export default function Services({ onOpenBooking }) {
+export default function Services() {
   return (
     <section id="services" className="py-20 bg-slate-900/60 relative border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,17 +77,15 @@ export default function Services({ onOpenBooking }) {
                   </div>
 
                   <div className="grid grid-cols-2 gap-2">
-                    <button
-                      onClick={() => onOpenBooking()}
+                    <a
+                      href="/thankyou?type=call"
                       className="py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-md shadow-orange-500/15 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
                     >
-                      <span>Inquire Now</span>
+                      <span>Call Us</span>
                       <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
+                    </a>
                     <a
-                      href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(`Hello! I want to inquire about your ${service.title} service.`)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="/thankyou?type=whatsapp"
                       className="py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center justify-center gap-1.5 transition-all"
                     >
                       <MessageCircle className="w-3.5 h-3.5" />

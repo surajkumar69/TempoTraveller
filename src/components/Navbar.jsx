@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageCircle, Menu, X, Calendar, MapPin, ChevronRight } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, MapPin, ChevronRight } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/fleetData';
 import logoImg from '../assets/images/logo.png';
 
-export default function Navbar({ onOpenBooking }) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -69,7 +69,7 @@ export default function Navbar({ onOpenBooking }) {
           {/* Header Actions */}
           <div className="hidden sm:flex items-center gap-3">
             <a
-              href={`tel:${BUSINESS_INFO.phone}`}
+              href="/thankyou?type=call"
               className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 text-xs font-semibold hover:border-slate-700 hover:text-white transition-all"
               title="Call Us Directly"
             >
@@ -78,23 +78,13 @@ export default function Navbar({ onOpenBooking }) {
             </a>
 
             <a
-              href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hello! I would like to inquire about renting a vehicle from Shillong.')}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/thankyou?type=whatsapp"
               className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold hover:bg-emerald-600 hover:text-white transition-all"
               title="WhatsApp Chat"
             >
               <MessageCircle className="w-3.5 h-3.5" />
               <span>WhatsApp</span>
             </a>
-
-            <button
-              onClick={() => onOpenBooking()}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-orange-600 to-amber-500 text-white text-xs font-bold shadow-lg shadow-orange-500/20 hover:from-orange-500 hover:to-amber-400 hover:shadow-orange-500/35 transition-all transform active:scale-95 cursor-pointer"
-            >
-              <Calendar className="w-3.5 h-3.5" />
-              <span>Book Now</span>
-            </button>
           </div>
 
           {/* Mobile Menu Toggle Button */}
@@ -127,32 +117,20 @@ export default function Navbar({ onOpenBooking }) {
 
           <div className="pt-2 grid grid-cols-2 gap-2">
             <a
-              href={`tel:${BUSINESS_INFO.phone}`}
+              href="/thankyou?type=call"
               className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-slate-900 text-slate-200 font-semibold text-xs border border-slate-800"
             >
               <Phone className="w-4 h-4 text-orange-500" />
               <span>Call Now</span>
             </a>
             <a
-              href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hello! I want to enquire about vehicle booking.')}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/thankyou?type=whatsapp"
               className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold text-xs"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>
             </a>
           </div>
-
-          <button
-            onClick={() => {
-              setMobileMenuOpen(false);
-              onOpenBooking();
-            }}
-            className="w-full py-3 rounded-lg bg-gradient-to-r from-orange-600 to-amber-500 text-white font-bold text-sm shadow-lg shadow-orange-500/20 text-center block cursor-pointer"
-          >
-            Book Now
-          </button>
         </div>
       )}
     </header>

@@ -4,7 +4,7 @@ import { BUSINESS_INFO } from '../data/fleetData';
 import tempoImg from '../assets/images/tempo_traveller.jpg';
 import urbaniaImg from '../assets/images/force_urbania.jpg';
 
-export default function LocationsSection({ onOpenBooking }) {
+export default function LocationsSection() {
   const shillongRoutes = [
     { name: 'Shillong Local Sightseeing', detail: 'Police Bazar, Ward\'s Lake, Elephant Falls, Laitlum Canyons', highlight: 'Ideal for 13/17 Seater Tempo Traveller & Urbania' },
     { name: 'Shillong to Cherrapunji (Sohra)', detail: 'Nohkalikai Falls, Mawsmai Cave, Seven Sisters Waterfalls', highlight: 'Smooth Hill Curve Driving' },
@@ -115,16 +115,15 @@ export default function LocationsSection({ onOpenBooking }) {
 
             {/* Hub Actions */}
             <div className="pt-4 border-t border-slate-800 flex items-center gap-3">
-              <button
-                onClick={() => onOpenBooking('urb-13')}
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer"
-              >
-                Book Shillong Ride
-              </button>
               <a
-                href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hello! I am looking for Tempo Traveller and Urbania Rental for Shillong.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/thankyou?type=call"
+                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer flex items-center justify-center gap-2"
+              >
+                <Phone className="w-4 h-4" />
+                Call Us
+              </a>
+              <a
+                href="/thankyou?type=whatsapp"
                 className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center gap-1.5 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -202,16 +201,15 @@ export default function LocationsSection({ onOpenBooking }) {
 
             {/* Hub Actions */}
             <div className="pt-4 border-t border-slate-800 flex items-center gap-3">
-              <button
-                onClick={() => onOpenBooking('tt-17')}
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer"
-              >
-                Book Guwahati Ride
-              </button>
               <a
-                href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hello! I am inquiring about Tempo Traveller and Urbania Rental for Guwahati.')}`}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/thankyou?type=call"
+                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer flex items-center justify-center gap-2"
+              >
+                <Phone className="w-4 h-4" />
+                Call Us
+              </a>
+              <a
+                href="/thankyou?type=whatsapp"
                 className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center gap-1.5 transition-all"
               >
                 <MessageCircle className="w-4 h-4" />
@@ -233,12 +231,13 @@ export default function LocationsSection({ onOpenBooking }) {
               We provide full-service <strong>Tempo Traveller and Urbania rental</strong> for multi-day outstation packages across <strong>Meghalaya</strong>, <strong>Assam</strong>, and <strong>Arunachal Pradesh</strong>.
             </p>
           </div>
-          <button
-            onClick={() => onOpenBooking()}
-            className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-orange-400 font-bold text-xs border border-slate-700 hover:border-orange-500/40 transition-all shrink-0 cursor-pointer"
+          <a
+            href="/thankyou?type=call"
+            className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-orange-400 font-bold text-xs border border-slate-700 hover:border-orange-500/40 transition-all shrink-0 cursor-pointer flex items-center gap-2"
           >
-            Get Custom Outstation Quote
-          </button>
+            <Phone className="w-4 h-4" />
+            Call for Custom Quote
+          </a>
         </div>
 
       </div>

@@ -3,7 +3,7 @@ import { VEHICLES } from '../data/fleetData';
 import VehicleCard from './VehicleCard';
 import { Car, Filter, ShieldAlert } from 'lucide-react';
 
-export default function VehicleFleet({ onBookNow }) {
+export default function VehicleFleet() {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const categories = [
@@ -61,7 +61,7 @@ export default function VehicleFleet({ onBookNow }) {
         {/* Vehicles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredVehicles.map((vehicle) => (
-            <VehicleCard key={vehicle.id} vehicle={vehicle} onBookNow={onBookNow} />
+            <VehicleCard key={vehicle.id} vehicle={vehicle} />
           ))}
         </div>
 

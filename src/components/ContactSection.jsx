@@ -1,34 +1,8 @@
-import React, { useState } from 'react';
-import { BUSINESS_INFO, VEHICLES } from '../data/fleetData';
-import { Mail, MapPin, Phone, MessageCircle, Send, CheckCircle2, Map, Calendar, Users, Car } from 'lucide-react';
+import React from 'react';
+import { BUSINESS_INFO } from '../data/fleetData';
+import { Mail, MapPin, Phone, MessageCircle, Map } from 'lucide-react';
 
-export default function ContactSection({ selectedVehicleId }) {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    pickup: 'Police Bazar, Shillong',
-    drop: 'Cherrapunji / Local Sightseeing',
-    date: '',
-    passengers: '1-4',
-    vehicleId: selectedVehicleId || 'tt-13',
-    message: ''
-  });
-
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-
-    const veh = VEHICLES.find(v => v.id === formData.vehicleId) || VEHICLES[0];
-    const text = `*NEW WEBSITE BOOKING ENQUIRY*\n\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email || 'N/A'}\nVehicle: ${veh.name}\nPickup: ${formData.pickup}\nDrop: ${formData.drop}\nDate: ${formData.date}\nPassengers: ${formData.passengers}\nMessage: ${formData.message || 'None'}`;
-    
-    // Auto trigger WhatsApp as well
-    setTimeout(() => {
-      window.open(`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
-    }, 1200);
-  };
+export default function ContactSection() {
 
   return (
     <section id="contact" className="py-20 bg-slate-950 relative border-t border-slate-800">
@@ -140,185 +114,33 @@ export default function ContactSection({ selectedVehicleId }) {
 
           </div>
 
-          {/* Right Column: Professional Booking & Enquiry Form */}
+              {/* Right Column: Professional Booking & Enquiry Form */}
           <div className="lg:col-span-7">
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl space-y-6">
               
               <div>
-                <span className="text-xs uppercase font-extrabold tracking-wider text-orange-500">Send Direct Message</span>
-                <h3 className="text-2xl font-bold font-['Outfit'] text-white mt-1">Vehicle Booking &amp; Rate Enquiry</h3>
-                <p className="text-xs text-slate-400 mt-1">We respond within minutes with transparent pricing and vehicle confirmation.</p>
+                <span className="text-xs uppercase font-extrabold tracking-wider text-orange-500">Fast Booking</span>
+                <h3 className="text-2xl font-bold font-['Outfit'] text-white mt-1">Book Your Vehicle Instantly</h3>
+                <p className="text-xs text-slate-400 mt-1">Contact us directly via Call or WhatsApp for quick booking, transparent pricing, and vehicle confirmation.</p>
               </div>
 
-              {submitted ? (
-                <div className="p-6 rounded-2xl bg-emerald-950/60 border border-emerald-500/40 text-center space-y-3 animate-fadeIn">
-                  <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
-                    <CheckCircle2 className="w-8 h-8" />
-                  </div>
-                  <h4 className="text-xl font-bold text-white font-['Outfit']">Enquiry Submitted Successfully!</h4>
-                  <p className="text-xs text-emerald-200 leading-relaxed max-w-md mx-auto">
-                    Thank you for reaching out to Tempo Traveller and Urbania Co. We are redirecting your query to our WhatsApp desk for instant processing.
-                  </p>
-                  <button
-                    onClick={() => setSubmitted(false)}
-                    className="mt-2 text-xs text-orange-400 font-bold hover:underline"
-                  >
-                    Submit Another Enquiry
-                  </button>
-                </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  
-                  {/* Name & Phone */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Your Full Name *
-                      </label>
-                      <input
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="e.g. Rahul Sharma"
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Phone / WhatsApp Number *
-                      </label>
-                      <input
-                        type="tel"
-                        required
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="+91 69093 26969"
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Email & Vehicle */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Email Address
-                      </label>
-                      <input
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="name@example.com"
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Preferred Vehicle *
-                      </label>
-                      <select
-                        value={formData.vehicleId}
-                        onChange={(e) => setFormData({ ...formData, vehicleId: e.target.value })}
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors cursor-pointer"
-                      >
-                        {VEHICLES.map((v) => (
-                          <option key={v.id} value={v.id}>
-                            {v.name} ({v.priceLabel})
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-                  </div>
-
-                  {/* Pickup & Drop */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Pickup Location
-                      </label>
-                      <input
-                        type="text"
-                        value={formData.pickup}
-                        onChange={(e) => setFormData({ ...formData, pickup: e.target.value })}
-                        placeholder="e.g. Police Bazar or Guwahati Airport"
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Drop / Tour Destination
-                      </label>
-                      <input
-                        type="text"
-                        value={formData.drop}
-                        onChange={(e) => setFormData({ ...formData, drop: e.target.value })}
-                        placeholder="e.g. Cherrapunji, Dawki, Mawlynnong"
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Date & Passenger Count */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Journey Start Date
-                      </label>
-                      <input
-                        type="date"
-                        value={formData.date}
-                        onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                        Number of Passengers
-                      </label>
-                      <select
-                        value={formData.passengers}
-                        onChange={(e) => setFormData({ ...formData, passengers: e.target.value })}
-                        className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors cursor-pointer"
-                      >
-                        <option value="1-4">1 to 4 Passengers</option>
-                        <option value="5-7">5 to 7 Passengers</option>
-                        <option value="8-13">8 to 13 Passengers</option>
-                        <option value="14-17">14 to 17 Passengers</option>
-                        <option value="18-25">18 to 25 Passengers</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  {/* Message */}
-                  <div>
-                    <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
-                      Special Requirements / Tour Plan Notes
-                    </label>
-                    <textarea
-                      rows={3}
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Let us know if you need multi-day tour packages, Guwahati airport drop, luggage assistance, etc."
-                      className="w-full px-3.5 py-2.5 bg-slate-950 border border-slate-800 rounded-xl text-white text-sm focus:outline-none focus:border-orange-500 transition-colors resize-none"
-                    />
-                  </div>
-
-                  {/* Submit Button */}
-                  <button
-                    type="submit"
-                    className="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-extrabold text-sm shadow-xl shadow-orange-500/25 flex items-center justify-center gap-2 transition-all cursor-pointer"
-                  >
-                    <Send className="w-4 h-4" />
-                    <span>Send Booking Enquiry</span>
-                  </button>
-
-                </form>
-              )}
+              <div className="space-y-4 pt-4">
+                <a
+                  href="/thankyou?type=call"
+                  className="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-extrabold text-lg shadow-xl shadow-orange-500/25 flex items-center justify-center gap-3 transition-all cursor-pointer"
+                >
+                  <Phone className="w-6 h-6" />
+                  <span>Call Us Now</span>
+                </a>
+                
+                <a
+                  href="/thankyou?type=whatsapp"
+                  className="w-full py-4 px-6 rounded-xl bg-[#25D366] hover:bg-[#20b858] text-white font-extrabold text-lg shadow-xl shadow-green-500/25 flex items-center justify-center gap-3 transition-all cursor-pointer"
+                >
+                  <MessageCircle className="w-6 h-6" />
+                  <span>WhatsApp Us</span>
+                </a>
+              </div>
 
             </div>
           </div>

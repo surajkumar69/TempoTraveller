@@ -2,7 +2,7 @@ import React from 'react';
 import { BUSINESS_INFO } from '../data/fleetData';
 import { Calendar, Phone, MessageCircle, ArrowRight } from 'lucide-react';
 
-export default function BookingCTA({ onOpenBooking }) {
+export default function BookingCTA() {
   return (
     <section className="py-16 bg-gradient-to-r from-orange-900/40 via-slate-950 to-amber-950/40 relative border-t border-b border-orange-500/20 overflow-hidden">
       
@@ -21,27 +21,17 @@ export default function BookingCTA({ onOpenBooking }) {
 
         {/* Action Buttons */}
         <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
-          <button
-            onClick={() => onOpenBooking()}
-            className="px-8 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-extrabold text-sm sm:text-base shadow-xl shadow-orange-500/30 flex items-center gap-2 transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
-          >
-            <Calendar className="w-5 h-5" />
-            <span>Book Now</span>
-          </button>
-
           <a
-            href={`tel:${BUSINESS_INFO.phone}`}
-            className="px-6 py-3.5 rounded-xl bg-slate-900 border border-slate-700 hover:border-slate-500 text-white font-bold text-sm sm:text-base flex items-center gap-2 transition-all hover:bg-slate-800"
+            href="/thankyou?type=call"
+            className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-sm sm:text-base flex items-center gap-2 transition-all shadow-xl shadow-orange-500/30 transform hover:scale-105 active:scale-95 cursor-pointer"
           >
-            <Phone className="w-5 h-5 text-orange-400" />
+            <Phone className="w-5 h-5 text-white" />
             <span>Call Now</span>
           </a>
 
           <a
-            href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent('Hello! I want to book a vehicle for my trip to Shillong.')}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 flex items-center gap-2 transition-all hover:scale-105"
+            href="/thankyou?type=whatsapp"
+            className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 flex items-center gap-2 transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
           >
             <MessageCircle className="w-5 h-5" />
             <span>WhatsApp Enquiry</span>

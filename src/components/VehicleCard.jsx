@@ -2,12 +2,7 @@ import React from 'react';
 import { Users, Fuel, CheckCircle, Calendar, MessageCircle, ArrowUpRight, Luggage, ShieldAlert } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/fleetData';
 
-export default function VehicleCard({ vehicle, onBookNow }) {
-  const handleWhatsAppEnquiry = () => {
-    const text = `Hello Tempo Traveller and Urbania Co.,\n\nI want to inquire about renting: *${vehicle.name}*\nPrice: ${vehicle.priceLabel}\nSeating: ${vehicle.seats} Seater\n\nPlease let me know availability and daily package details for travel across Meghalaya, Assam & Arunachal Pradesh.`;
-    window.open(`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank');
-  };
-
+export default function VehicleCard({ vehicle }) {
   return (
     <div className="bg-slate-900 border border-slate-800 hover:border-orange-500/50 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-orange-500/10 transition-all duration-300 flex flex-col group">
       
@@ -87,21 +82,20 @@ export default function VehicleCard({ vehicle, onBookNow }) {
 
         {/* Action Buttons */}
         <div className="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2">
-          <button
-            onClick={() => onBookNow(vehicle.id)}
+          <a
+            href="/thankyou?type=call"
             className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-md shadow-orange-500/15 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
           >
-            <Calendar className="w-3.5 h-3.5" />
-            <span>Book Now</span>
-          </button>
+            <span>Call Us</span>
+          </a>
 
-          <button
-            onClick={handleWhatsAppEnquiry}
+          <a
+            href="/thankyou?type=whatsapp"
             className="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 font-semibold text-xs border border-slate-700 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
           >
             <MessageCircle className="w-3.5 h-3.5" />
             <span>WhatsApp</span>
-          </button>
+          </a>
         </div>
 
       </div>

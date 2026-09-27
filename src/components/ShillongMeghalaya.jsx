@@ -3,7 +3,7 @@ import { MEGHALAYA_DESTINATIONS, BUSINESS_INFO } from '../data/fleetData';
 import { MapPin, Navigation, ArrowRight, Compass } from 'lucide-react';
 import heroBg from '../assets/images/shillong_hero.jpg';
 
-export default function ShillongMeghalaya({ onOpenBooking }) {
+export default function ShillongMeghalaya() {
   return (
     <section id="meghalaya" className="py-20 bg-slate-900/40 relative border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,13 +43,13 @@ export default function ShillongMeghalaya({ onOpenBooking }) {
                 Whether you need a 1-day Shillong local tour, a 3-day Cherrapunji &amp; Dawki expedition, or airport transfers, our drivers ensure smooth navigation of hill curves.
               </p>
               <div className="pt-2">
-                <button
-                  onClick={() => onOpenBooking()}
+                <a
+                  href="/thankyou?type=call"
                   className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 inline-flex items-center gap-2 transition-all cursor-pointer"
                 >
-                  <span>Plan Your Trip Now</span>
+                  <span>Call Us Now</span>
                   <ArrowRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -89,12 +89,10 @@ export default function ShillongMeghalaya({ onOpenBooking }) {
                 </div>
 
                 <a
-                  href={`https://wa.me/${BUSINESS_INFO.whatsappNumber}?text=${encodeURIComponent(`Hello! I am planning a tour to ${dest.name}. Please suggest available vehicles and pricing.`)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/thankyou?type=whatsapp"
                   className="w-full py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-orange-400 text-xs font-bold border border-slate-800 text-center block transition-colors"
                 >
-                  Book for {dest.name}
+                  WhatsApp for {dest.name}
                 </a>
               </div>
             </div>

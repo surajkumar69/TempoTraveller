@@ -111,7 +111,7 @@ export default function Footer() {
 
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-emerald-400 shrink-0" />
-                <a href={`tel:${BUSINESS_INFO.phone}`} className="text-emerald-400 font-bold hover:underline">
+                <a href="/thankyou?type=call" className="text-emerald-400 font-bold hover:underline">
                   {BUSINESS_INFO.phoneFormatted}
                 </a>
               </div>
