@@ -76,14 +76,14 @@ export default function Hero() {
               <div className="space-y-4 pt-2">
                 <a
                   href="/thankyou?type=call"
-                  className="w-full py-4 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-lg shadow-xl shadow-orange-500/25 flex items-center justify-center gap-3 transition-all cursor-pointer"
+                  className="w-full py-4 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-lg shadow-xl shadow-orange-500/25 flex items-center justify-center gap-3 transition-all cursor-pointer relative z-50 pointer-events-auto"
                 >
                   <span>Call Us Now</span>
                 </a>
 
                 <a
                   href="/thankyou?type=whatsapp"
-                  className="w-full py-4 px-4 rounded-xl bg-[#25D366] hover:bg-[#20b858] text-white font-bold text-lg shadow-xl shadow-green-500/25 flex items-center justify-center gap-3 transition-all cursor-pointer"
+                  className="w-full py-4 px-4 rounded-xl bg-[#25D366] hover:bg-[#20b858] text-white font-bold text-lg shadow-xl shadow-green-500/25 flex items-center justify-center gap-3 transition-all cursor-pointer relative z-50 pointer-events-auto"
                 >
                   <span>WhatsApp Us</span>
                 </a>

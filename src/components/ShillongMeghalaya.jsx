@@ -45,7 +45,7 @@ export default function ShillongMeghalaya() {
               <div className="pt-2">
                 <a
                   href="/thankyou?type=call"
-                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 inline-flex items-center gap-2 transition-all cursor-pointer"
+                  className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 inline-flex items-center gap-2 transition-all cursor-pointer relative z-50 pointer-events-auto"
                 >
                   <span>Call Us Now</span>
                   <ArrowRight className="w-4 h-4" />
@@ -90,7 +90,7 @@ export default function ShillongMeghalaya() {
 
                 <a
                   href="/thankyou?type=whatsapp"
-                  className="w-full py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-orange-400 text-xs font-bold border border-slate-800 text-center block transition-colors"
+                  className="w-full py-2 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-orange-400 text-xs font-bold border border-slate-800 text-center block transition-colors relative z-50 pointer-events-auto cursor-pointer"
                 >
                   WhatsApp for {dest.name}
                 </a>

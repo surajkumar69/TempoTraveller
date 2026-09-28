@@ -84,14 +84,14 @@ export default function VehicleCard({ vehicle }) {
         <div className="pt-3 border-t border-slate-800/80 grid grid-cols-2 gap-2">
           <a
             href="/thankyou?type=call"
-            className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-md shadow-orange-500/15 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+            className="w-full py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-md shadow-orange-500/15 flex items-center justify-center gap-1.5 transition-all cursor-pointer relative z-50 pointer-events-auto"
           >
             <span>Call Us</span>
           </a>
 
           <a
             href="/thankyou?type=whatsapp"
-            className="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 font-semibold text-xs border border-slate-700 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+            className="w-full py-2.5 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-emerald-400 font-semibold text-xs border border-slate-700 flex items-center justify-center gap-1.5 transition-all cursor-pointer relative z-50 pointer-events-auto"
           >
             <MessageCircle className="w-3.5 h-3.5" />
             <span>WhatsApp</span>

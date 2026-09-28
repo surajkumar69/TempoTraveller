@@ -117,14 +117,14 @@ export default function LocationsSection() {
             <div className="pt-4 border-t border-slate-800 flex items-center gap-3">
               <a
                 href="/thankyou?type=call"
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer flex items-center justify-center gap-2 relative z-50 pointer-events-auto"
               >
                 <Phone className="w-4 h-4" />
                 Call Us
               </a>
               <a
                 href="/thankyou?type=whatsapp"
-                className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center gap-1.5 transition-all"
+                className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center gap-1.5 transition-all relative z-50 pointer-events-auto cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp</span>
@@ -203,14 +203,14 @@ export default function LocationsSection() {
             <div className="pt-4 border-t border-slate-800 flex items-center gap-3">
               <a
                 href="/thankyou?type=call"
-                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-4 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-lg shadow-orange-500/20 text-center transition-all cursor-pointer flex items-center justify-center gap-2 relative z-50 pointer-events-auto"
               >
                 <Phone className="w-4 h-4" />
                 Call Us
               </a>
               <a
                 href="/thankyou?type=whatsapp"
-                className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center gap-1.5 transition-all"
+                className="py-3 px-4 rounded-xl bg-slate-950 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center gap-1.5 transition-all relative z-50 pointer-events-auto cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
                 <span>WhatsApp</span>
@@ -233,7 +233,7 @@ export default function LocationsSection() {
           </div>
           <a
             href="/thankyou?type=call"
-            className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-orange-400 font-bold text-xs border border-slate-700 hover:border-orange-500/40 transition-all shrink-0 cursor-pointer flex items-center gap-2"
+            className="px-5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-orange-400 font-bold text-xs border border-slate-700 hover:border-orange-500/40 transition-all shrink-0 cursor-pointer flex items-center gap-2 relative z-50 pointer-events-auto"
           >
             <Phone className="w-4 h-4" />
             Call for Custom Quote

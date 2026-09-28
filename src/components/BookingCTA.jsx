@@ -23,7 +23,7 @@ export default function BookingCTA() {
         <div className="pt-4 flex flex-wrap items-center justify-center gap-4">
           <a
             href="/thankyou?type=call"
-            className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-sm sm:text-base flex items-center gap-2 transition-all shadow-xl shadow-orange-500/30 transform hover:scale-105 active:scale-95 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-sm sm:text-base flex items-center gap-2 transition-all shadow-xl shadow-orange-500/30 transform hover:scale-105 active:scale-95 cursor-pointer relative z-50 pointer-events-auto"
           >
             <Phone className="w-5 h-5 text-white" />
             <span>Call Now</span>
@@ -31,7 +31,7 @@ export default function BookingCTA() {
 
           <a
             href="/thankyou?type=whatsapp"
-            className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 flex items-center gap-2 transition-all transform hover:scale-105 active:scale-95 cursor-pointer"
+            className="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-emerald-600/20 flex items-center gap-2 transition-all transform hover:scale-105 active:scale-95 cursor-pointer relative z-50 pointer-events-auto"
           >
             <MessageCircle className="w-5 h-5" />
             <span>WhatsApp Enquiry</span>

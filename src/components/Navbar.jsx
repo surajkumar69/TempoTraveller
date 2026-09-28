@@ -70,7 +70,7 @@ export default function Navbar() {
           <div className="hidden sm:flex items-center gap-3">
             <a
               href="/thankyou?type=call"
-              className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 text-xs font-semibold hover:border-slate-700 hover:text-white transition-all"
+              className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 text-xs font-semibold hover:border-slate-700 hover:text-white transition-all relative z-50 pointer-events-auto cursor-pointer"
               title="Call Us Directly"
             >
               <Phone className="w-3.5 h-3.5 text-orange-500" />
@@ -79,7 +79,7 @@ export default function Navbar() {
 
             <a
               href="/thankyou?type=whatsapp"
-              className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold hover:bg-emerald-600 hover:text-white transition-all"
+              className="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600/20 border border-emerald-500/30 text-emerald-400 text-xs font-semibold hover:bg-emerald-600 hover:text-white transition-all relative z-50 pointer-events-auto cursor-pointer"
               title="WhatsApp Chat"
             >
               <MessageCircle className="w-3.5 h-3.5" />
@@ -118,14 +118,14 @@ export default function Navbar() {
           <div className="pt-2 grid grid-cols-2 gap-2">
             <a
               href="/thankyou?type=call"
-              className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-slate-900 text-slate-200 font-semibold text-xs border border-slate-800"
+              className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-slate-900 text-slate-200 font-semibold text-xs border border-slate-800 relative z-50 pointer-events-auto cursor-pointer"
             >
               <Phone className="w-4 h-4 text-orange-500" />
               <span>Call Now</span>
             </a>
             <a
               href="/thankyou?type=whatsapp"
-              className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold text-xs"
+              className="flex items-center justify-center gap-2 py-2.5 rounded-lg bg-emerald-600 text-white font-semibold text-xs relative z-50 pointer-events-auto cursor-pointer"
             >
               <MessageCircle className="w-4 h-4" />
               <span>WhatsApp</span>

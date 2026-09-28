@@ -79,14 +79,14 @@ export default function Services() {
                   <div className="grid grid-cols-2 gap-2">
                     <a
                       href="/thankyou?type=call"
-                      className="py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-md shadow-orange-500/15 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                      className="py-2.5 px-3 rounded-xl bg-gradient-to-r from-orange-600 to-amber-500 hover:from-orange-500 hover:to-amber-400 text-white font-bold text-xs shadow-md shadow-orange-500/15 flex items-center justify-center gap-1.5 transition-all cursor-pointer relative z-50 pointer-events-auto"
                     >
                       <span>Call Us</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </a>
                     <a
                       href="/thankyou?type=whatsapp"
-                      className="py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center justify-center gap-1.5 transition-all"
+                      className="py-2.5 px-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-emerald-400 font-semibold text-xs border border-slate-800 flex items-center justify-center gap-1.5 transition-all relative z-50 pointer-events-auto cursor-pointer"
                     >
                       <MessageCircle className="w-3.5 h-3.5" />
                       <span>WhatsApp</span>
