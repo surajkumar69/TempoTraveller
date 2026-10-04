@@ -29,7 +29,7 @@ export default function VehicleFleet() {
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/20 text-orange-400 text-xs font-bold uppercase tracking-wider">
             <Car className="w-4 h-4" />
-            <span>Our Premium Vehicle Fleet</span>
+            <span>Our Fleet</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold font-['Outfit'] text-white tracking-tight">
@@ -37,7 +37,7 @@ export default function VehicleFleet() {
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            From 13-25 Seater Tempo Travellers &amp; Executive Force Urbania to luxury Innova Crysta, Ertiga, Brezza &amp; Swift Dzire cabs. Verified clean, comfortable, and ready for North-East mountain roads.
+            From 13-25 Seater Tempo Travellers &amp; Executive Force Urbania to Ertiga, Brezza &amp; Swift Dzire cabs. Verified clean, comfortable, and ready for North-East mountain roads.
           </p>
         </div>
 

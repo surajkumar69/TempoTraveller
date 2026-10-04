@@ -70,7 +70,7 @@ export default function AboutUs() {
             </p>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed sm:leading-relaxed">
-              Our core mission is centered on passenger safety, absolute vehicle cleanliness, hill-trained driver professionalism, and transparent pricing with zero hidden fees. From 13, 17, and 25 seater Tempo Travellers to luxury 13 &amp; 16 seater Force Urbanias and premium SUVs like Innova Crysta, Ertiga, Brezza, and Swift Dzire, every vehicle is equipped to deliver a seamless journey throughout <strong className="text-slate-200">Meghalaya, Assam &amp; Arunachal Pradesh</strong>.
+              Our core mission is centered on passenger safety, absolute vehicle cleanliness, hill-trained driver professionalism, and transparent pricing with zero hidden fees. From 13/17 and 25 seater Tempo Travellers to 12/16 seater Force Urbanias and cabs like Ertiga, Brezza, and Swift Dzire, every vehicle is equipped to deliver a seamless journey throughout <strong className="text-slate-200">Meghalaya, Assam &amp; Arunachal Pradesh</strong>.
             </p>
 
             {/* Core Features Grid */}

@@ -19,7 +19,7 @@ export default function Services() {
           </h2>
 
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed">
-            Premium group travel solutions featuring <strong>Tempo Traveller for Shillong</strong>, <strong>Urbania for Guwahati</strong>, airport transfers, Cherrapunji excursions, Kaziranga safaris &amp; outstation travel across Meghalaya, Assam &amp; Arunachal Pradesh.
+            Group travel solutions featuring <strong>Tempo Traveller for Shillong</strong>, <strong>Urbania for Guwahati</strong>, airport transfers, Cherrapunji excursions, Kaziranga safaris &amp; outstation travel across Meghalaya, Assam &amp; Arunachal Pradesh.
           </p>
         </div>
 

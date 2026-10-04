@@ -1,149 +1,35 @@
-import tempoImg from '../assets/images/tempo_traveller.jpg';
-import urbaniaImg from '../assets/images/force_urbania.jpg';
-import innovaImg from '../assets/images/innova_crysta.jpg';
-import ertigaImg from '../assets/images/ertiga.jpg';
-import brezzaImg from '../assets/images/vitara_brezza.jpg';
-import dzireImg from '../assets/images/swift_dzire.jpg';
+import tempo1317Img from '../assets/images/tempo_13_17_ai.jpg';
+import tempo25Img from '../assets/images/tempo_25_ai.jpg';
+import urbaniaImg from '../assets/images/urbania_ai.jpg';
+import ertigaImg from '../assets/images/ertiga_ai.jpg';
+import brezzaImg from '../assets/images/vitara_brezza_ai.jpg';
+import dzireImg from '../assets/images/swift_dzire_ai.jpg';
 
 export const VEHICLES = [
   {
-    id: 'tt-13',
-    name: 'Tempo Traveller (13 Seater)',
-    category: 'tempo-traveller',
-    type: 'Tempo Traveller',
-    seats: 13,
-    price: 7500,
-    priceLabel: '₹7,500 onwards',
-    image: tempoImg,
-    badge: 'Popular for Family Groups',
-    description: 'Spacious and comfortable 13-seater Tempo Traveller for family trips, tour groups and hill excursions around Meghalaya, Assam & Arunachal Pradesh.',
-    features: ['13 Reclining Seats', 'Powerful AC / Blower', 'Ample Boot Space', 'High Roof Standing Comfort', 'Bluetooth Music System', 'Hill-Trained Driver'],
-    specifications: {
-      fuel: 'Diesel',
-      transmission: 'Manual',
-      luggage: '4-6 Large Bags',
-      ac: 'Dual AC'
-    }
-  },
-  {
-    id: 'tt-17',
-    name: 'Tempo Traveller (17 Seater)',
-    category: 'tempo-traveller',
-    type: 'Tempo Traveller',
-    seats: 17,
-    price: 7500,
-    priceLabel: '₹7,500 onwards',
-    image: tempoImg,
-    badge: 'Ideal for Tour Groups',
-    description: 'Spacious 17-seater Tempo Traveller designed for smooth group travel across Cherrapunji, Dawki, Kaziranga, and outstation Meghalaya, Assam & Arunachal Pradesh tours.',
-    features: ['17 Luxury Seats', 'Push-back Ergonomic Seating', 'Individual Charging Points', 'Spacious Aisle', 'Substantial Luggage Carrier', 'First Aid & Safety Kit'],
-    specifications: {
-      fuel: 'Diesel',
-      transmission: 'Manual',
-      luggage: '6-8 Bags',
-      ac: 'Roof Mounted AC'
-    }
-  },
-  {
-    id: 'tt-25',
-    name: 'Tempo Traveller (25 Seater)',
-    category: 'tempo-traveller',
-    type: 'Tempo Traveller',
-    seats: 25,
-    price: 10000,
-    priceLabel: '₹10,000 onwards',
-    image: tempoImg,
-    badge: 'Large Event Special',
-    description: 'Maximum capacity 25-seater Tempo Traveller ideal for large corporate groups, wedding parties, and extended tour delegations across Meghalaya, Assam & Arunachal Pradesh.',
-    features: ['25 Comfortable Seats', 'Spacious Interiors', 'High Roof Clearance', 'Heavy Duty Suspension', 'Entertainment System', 'Experienced Mountain Driver'],
-    specifications: {
-      fuel: 'Diesel',
-      transmission: 'Manual',
-      luggage: '8+ Large Bags',
-      ac: 'Powerful Central AC'
-    }
-  },
-  {
-    id: 'urb-13',
-    name: 'Force Urbania (13 Seater)',
-    category: 'urbania',
-    type: 'Force Urbania',
-    seats: 13,
-    price: 11000,
-    priceLabel: '₹11,000 onwards',
-    image: urbaniaImg,
-    badge: 'Executive VIP Luxury',
-    description: 'Premier executive Urbania for Shillong and Urbania for Guwahati. Monocoque body safety, individual AC vents, and supreme suspension comfort across Meghalaya, Assam & Arunachal Pradesh.',
-    features: ['13 Plush Reclining Seats', 'Individual AC Vents', 'Super Quiet Cabin', 'Monocoque Safety Body', 'Individual USB Chargers', 'Panoramic Wide Windows'],
-    specifications: {
-      fuel: 'Diesel',
-      transmission: 'Manual 6-Speed',
-      luggage: '5-7 Bags',
-      ac: 'Climate Control Individual Vents'
-    }
-  },
-  {
-    id: 'urb-16',
-    name: 'Force Urbania (16 Seater)',
-    category: 'urbania',
-    type: 'Force Urbania',
-    seats: 16,
-    price: 11000,
-    priceLabel: '₹11,000 onwards',
-    image: urbaniaImg,
-    badge: 'Ultra Premium Group Travel',
-    description: 'Luxury 16-seater Urbania for Shillong & Guwahati group tours, corporate delegations, and outstation trips across Meghalaya, Assam & Arunachal Pradesh.',
-    features: ['16 Premium Seats', 'Ultra-Smooth Suspension', 'Ambient Cabin Lighting', 'Reclining Armrest Seats', 'Spacious Overhead Storage', 'Local Expert Driver'],
-    specifications: {
-      fuel: 'Diesel',
-      transmission: 'Manual 6-Speed',
-      luggage: '7-9 Bags',
-      ac: 'Dual AC Vents'
-    }
-  },
-  {
-    id: 'crysta-7',
-    name: 'Innova Crysta',
+    id: 'dzire',
+    name: 'Swift Dzire',
     category: 'cabs',
-    type: 'Innova Crysta',
-    seats: 7,
-    price: 5500,
-    priceLabel: '₹5,500 onwards',
-    image: innovaImg,
-    badge: 'Best-in-Class SUV Comfort',
-    description: 'The gold standard for hill road trips across Meghalaya, Assam & Arunachal Pradesh. Superior ride quality, plush captain seats, and exceptional safety.',
-    features: ['7 Seater Capacity', 'Captain Seats Option', 'Automatic Rear AC', 'Top Safety Rating', 'Smooth Hill Climbing', 'Clean & Sanitized Cabin'],
+    type: 'Sedan',
+    seats: 5,
+    price: 3500,
+    priceLabel: '₹3,500 onwards',
+    image: dzireImg,
+    badge: 'Best Budget Sedan',
+    description: 'Sleek and comfortable 5-seater sedan, perfect for couples, business travelers, and airport drop/pickup between Shillong, Guwahati & outstation destinations.',
+    features: ['5 Seater Capacity', 'Spacious Trunk Boot', 'Quiet Interior', 'Automatic AC', 'Clean Seat Covers', 'On-Time Guaranteed'],
     specifications: {
-      fuel: 'Diesel',
-      transmission: 'Manual/Automatic',
-      luggage: '3-4 Medium Bags',
-      ac: 'Multi-Zone AC'
-    }
-  },
-  {
-    id: 'ertiga-7',
-    name: 'Maruti Ertiga',
-    category: 'cabs',
-    type: 'Ertiga',
-    seats: 7,
-    price: 4500,
-    priceLabel: '₹4,500 onwards',
-    image: ertigaImg,
-    badge: 'Family Favorite MUV',
-    description: 'Economical yet highly spacious 7-seater MUV, ideal for small families exploring Shillong local points, Guwahati, Kaziranga & outstation routes.',
-    features: ['7 Seater Capacity', 'Foldable Rear Seats', 'Roof Mounted AC Vents', 'Fuel Efficient & Smooth', 'Clean Interiors', 'Punctual Pickup Service'],
-    specifications: {
-      fuel: 'Petrol/CNG',
+      fuel: 'Petrol',
       transmission: 'Manual',
-      luggage: '3 Bags',
-      ac: 'Rear AC Vents'
+      luggage: '2 Large Suitcases',
+      ac: 'Front & Rear AC'
     }
   },
   {
-    id: 'brezza-5',
+    id: 'brezza',
     name: 'Vitara Brezza',
     category: 'cabs',
-    type: 'Vitara Brezza',
+    type: 'Compact SUV',
     seats: 5,
     price: 4000,
     priceLabel: '₹4,000 onwards',
@@ -159,22 +45,79 @@ export const VEHICLES = [
     }
   },
   {
-    id: 'dzire-5',
-    name: 'Swift Dzire',
+    id: 'ertiga',
+    name: 'Ertiga',
     category: 'cabs',
-    type: 'Swift Dzire',
-    seats: 5,
-    price: 3500,
-    priceLabel: '₹3,500 onwards',
-    image: dzireImg,
-    badge: 'Best Budget Sedan',
-    description: 'Sleek and comfortable 5-seater sedan, perfect for couples, business travelers, and airport drop/pickup between Shillong, Guwahati & outstation destinations.',
-    features: ['5 Seater Capacity', 'Spacious Trunk Boot', 'Quiet Interior', 'Automatic AC', 'Clean Seat Covers', 'On-Time Guaranteed'],
+    type: 'MUV',
+    seats: 7,
+    price: 4500,
+    priceLabel: '₹4,500 onwards',
+    image: ertigaImg,
+    badge: 'Family Favorite MUV',
+    description: 'Economical yet highly spacious 7-seater MUV, ideal for small families exploring Shillong local points, Guwahati, Kaziranga & outstation routes.',
+    features: ['7 Seater Capacity', 'Foldable Rear Seats', 'Roof Mounted AC Vents', 'Fuel Efficient & Smooth', 'Clean Interiors', 'Punctual Pickup Service'],
     specifications: {
-      fuel: 'Petrol',
+      fuel: 'Petrol/CNG',
       transmission: 'Manual',
-      luggage: '2 Large Suitcases',
-      ac: 'Front & Rear AC'
+      luggage: '3 Bags',
+      ac: 'Rear AC Vents'
+    }
+  },
+  {
+    id: 'tt-13-17',
+    name: '13/17 Seater Tempo Traveller',
+    category: 'tempo-traveller',
+    type: 'Tempo Traveller',
+    seats: '13/17',
+    price: 7500,
+    priceLabel: '₹7,500 onwards',
+    image: tempo1317Img,
+    badge: 'Popular for Groups',
+    description: 'Spacious and comfortable Tempo Traveller for family trips, tour groups and hill excursions around Meghalaya, Assam & Arunachal Pradesh.',
+    features: ['Reclining Seats', 'Powerful AC / Blower', 'Ample Boot Space', 'High Roof Standing Comfort', 'Bluetooth Music System', 'Hill-Trained Driver'],
+    specifications: {
+      fuel: 'Diesel',
+      transmission: 'Manual',
+      luggage: '4-8 Bags',
+      ac: 'Roof Mounted AC'
+    }
+  },
+  {
+    id: 'tt-25',
+    name: '25 Seater Tempo Traveller',
+    category: 'tempo-traveller',
+    type: 'Tempo Traveller',
+    seats: 25,
+    price: 10000,
+    priceLabel: '₹10,000 onwards',
+    image: tempo25Img,
+    badge: 'Large Event Special',
+    description: 'Maximum capacity 25-seater Tempo Traveller ideal for large corporate groups, wedding parties, and extended tour delegations across Meghalaya, Assam & Arunachal Pradesh.',
+    features: ['25 Comfortable Seats', 'Spacious Interiors', 'High Roof Clearance', 'Heavy Duty Suspension', 'Entertainment System', 'Experienced Mountain Driver'],
+    specifications: {
+      fuel: 'Diesel',
+      transmission: 'Manual',
+      luggage: '8+ Large Bags',
+      ac: 'Powerful Central AC'
+    }
+  },
+  {
+    id: 'urb-12-16',
+    name: '12/16 Seater Urbania',
+    category: 'urbania',
+    type: 'Force Urbania',
+    seats: '12/16',
+    price: 11000,
+    priceLabel: '₹11,000 onwards',
+    image: urbaniaImg,
+    badge: 'Executive VIP Luxury',
+    description: 'Executive Urbania for Shillong and Urbania for Guwahati. Monocoque body safety, individual AC vents, and supreme suspension comfort across Meghalaya, Assam & Arunachal Pradesh.',
+    features: ['Plush Reclining Seats', 'Individual AC Vents', 'Super Quiet Cabin', 'Monocoque Safety Body', 'Individual USB Chargers', 'Panoramic Wide Windows'],
+    specifications: {
+      fuel: 'Diesel',
+      transmission: 'Manual 6-Speed',
+      luggage: '5-9 Bags',
+      ac: 'Climate Control Individual Vents'
     }
   }
 ];
@@ -185,7 +128,7 @@ export const SERVICES = [
     title: 'Tempo Traveller Rental',
     subtitle: '13, 17 & 25 Seater Options',
     description: 'Looking for a Tempo Traveller for Shillong or Tempo Traveller for Guwahati? We offer top-rated Tempo Traveller and Urbania Rental for Shillong & Guwahati for family trips, tour groups, Cherrapunji, Dawki, Kaziranga & outstation travel.',
-    image: tempoImg,
+    image: tempo1317Img,
     startingPrice: '₹7,500 / day onwards',
     highlights: [
       'High Roof Standing Comfort',
@@ -197,8 +140,8 @@ export const SERVICES = [
   {
     id: 'service-urbania',
     title: 'Force Urbania Rental',
-    subtitle: '13 & 16 Seater Luxury Vans',
-    description: 'Executive Urbania for Shillong and Urbania for Guwahati rentals. Next-generation VIP group travel for corporate delegations, weddings, and premium Meghalaya, Assam & Arunachal Pradesh tour packages.',
+    subtitle: '12 & 16 Seater Luxury Vans',
+    description: 'Executive Urbania for Shillong and Urbania for Guwahati rentals. Next-generation VIP group travel for corporate delegations, weddings, and executive Meghalaya, Assam & Arunachal Pradesh tour packages.',
     image: urbaniaImg,
     startingPrice: '₹11,000 / day onwards',
     highlights: [
@@ -211,7 +154,7 @@ export const SERVICES = [
   {
     id: 'service-cab',
     title: 'Cab Rental Services',
-    subtitle: 'Innova Crysta, Ertiga, Brezza & Dzire',
+    subtitle: 'Ertiga, Brezza & Dzire',
     description: 'Reliable local sightseeing and outstation cab services across Meghalaya, Assam & Arunachal Pradesh with courteous, experienced local drivers.',
     image: dzireImg,
     startingPrice: '₹3,500 / day onwards',
@@ -264,21 +207,21 @@ export const MEGHALAYA_DESTINATIONS = [
     tagline: 'Crystal Clear Boating Paradise',
     distance: '82 km from Shillong',
     description: 'Glide over transparent waters at Dawki near the Indo-Bangladesh border and visit Bangladesh viewpoint.',
-    recommendedVehicle: 'Force Urbania / Innova Crysta'
+    recommendedVehicle: 'Force Urbania / Ertiga'
   },
   {
     name: 'Kaziranga & Assam Circuit',
     tagline: 'Wildlife & Tea Garden Trails',
     distance: '240 km from Shillong',
     description: 'Experience rhino safaris in Kaziranga National Park and lush tea gardens across Assam.',
-    recommendedVehicle: 'Innova Crysta / Force Urbania'
+    recommendedVehicle: 'Force Urbania / Tempo Traveller'
   },
   {
     name: 'Tawang & Arunachal Circuit',
     tagline: 'Monasteries & Snowy Passes',
     distance: 'Outstation Expedition',
     description: 'Journey to Sela Pass, Tawang Monastery, and scenic alpine valleys in Arunachal Pradesh.',
-    recommendedVehicle: 'Tempo Traveller / Innova Crysta'
+    recommendedVehicle: 'Tempo Traveller / Force Urbania'
   }
 ];
 

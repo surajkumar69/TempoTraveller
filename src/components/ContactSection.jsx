@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { BUSINESS_INFO } from '../data/fleetData';
 import { Mail, MapPin, Phone, MessageCircle, Map } from 'lucide-react';
 
@@ -72,7 +72,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <span className="block font-bold text-white text-xs uppercase tracking-wider text-slate-400">Direct Phone &amp; WhatsApp</span>
-                    <a href={`tel:${BUSINESS_INFO.phone}`} className="text-emerald-400 font-bold hover:underline text-sm">
+                    <a href="/thankyou?type=call" className="text-emerald-400 font-bold hover:underline text-sm">
                       {BUSINESS_INFO.phoneFormatted}
                     </a>
                   </div>
@@ -151,3 +151,4 @@ export default function ContactSection() {
     </section>
   );
 }
+
